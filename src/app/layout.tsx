@@ -5,6 +5,8 @@ import { Providers } from './providers';
 
 import { siteConfig } from '@/config/site';
 
+import { Navbar } from '@/components/Navbar';
+
 const museoModerno = MuseoModerno({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -29,7 +31,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={museoModerno.className}>
         <Providers>
-          <main>{children}</main>
+          <div className="relative flex flex-col h-screen">
+            <Navbar />
+            {children}
+          </div>
         </Providers>
       </body>
     </html>
