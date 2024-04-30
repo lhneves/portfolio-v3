@@ -20,4 +20,34 @@
   .text-balance {
     text-wrap: balance;
   }
+
+   /* Hide scrollbar for Chrome, Safari and Opera */
+   .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center
+  }
+
+  .flex-col-center {
+    @apply flex flex-col items-center justify-center
+  }
+
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+  }
+
+  .absolute-center-bottom {
+    @apply absolute bottom-0 left-1/2 -translate-x-1/2
+  }
+
+  .text-border {
+    text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff;
+  }
 }
