@@ -50,4 +50,12 @@
   .text-border {
     text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff;
   }
+
+  .violet-blue-gradient {
+    @apply bg-gradient-to-r from-[#976DFF] to-[#4377FF]
+  }
+
+  .text-violet-blue-gradient {
+    @apply violet-blue-gradient inline-block text-transparent bg-clip-text
+  }
 }
