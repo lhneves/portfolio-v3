@@ -5,8 +5,8 @@ import Image from 'next/image';
 export const About = () => {
   return (
     <section className="w-full py-20">
-      <div className="w-full px-10 max-w-5xl mx-auto">
-        <Card className="bg-background/60 dark:bg-default-100/50 " isBlurred shadow="sm">
+      <div className="w-full px-10 max-w-6xl mx-auto">
+        <Card className="bg-background/60 dark:bg-default-100/50 p-0" isBlurred shadow="sm">
           <CardBody className="p-6">
             <div
               className={cn(
