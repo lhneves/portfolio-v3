@@ -4,7 +4,7 @@ import { WavyBackground } from '@/components/WavyBackground';
 
 export const Hero = () => {
   return (
-    <section className="relative h-[calc(100vh_-_4rem)] w-full">
+    <section className="relative h-[calc(100svh_-_4rem)] w-full">
       <WavyBackground className="max-w-4xl mx-auto pb-60">
         <div>
           <p className="mb-10 text-xl md:text-3xl lg:text-5xl mt-4 font-medium  text-center">
