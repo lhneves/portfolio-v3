@@ -1,6 +1,9 @@
-import { cn } from '@/lib/cn';
-import { Button, Card, CardBody } from '@nextui-org/react';
 import Image from 'next/image';
+import DevCartoon from '@/assets/dev-cartoon.webp';
+
+import { cn } from '@/lib/cn';
+
+import { Button, Card, CardBody } from '@nextui-org/react';
 
 export const About = () => {
   return (
@@ -23,7 +26,8 @@ export const About = () => {
                   )}
                   height={2048}
                   width={2048}
-                  src="/dev-cartoon.webp"
+                  src={DevCartoon}
+                  placeholder="blur"
                 />
               </div>
 
