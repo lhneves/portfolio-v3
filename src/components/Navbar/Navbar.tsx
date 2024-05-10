@@ -19,22 +19,7 @@ import { siteConfig } from '@/config/site';
 
 export const Navbar = () => {
   return (
-    <NextUINavbar
-      isBordered
-      className="px-10"
-      classNames={{ wrapper: ['px-0'] }}
-      shouldHideOnScroll
-      motionProps={{
-        initial: { y: -10, opacity: 0 },
-        animate: { y: 0, opacity: 1 },
-        exit: { y: -10, opacity: 0 },
-        transition: {
-          type: 'spring',
-          stiffness: 200,
-          damping: 35,
-        },
-      }}
-    >
+    <NextUINavbar isBordered className="px-10" classNames={{ wrapper: ['px-0'] }}>
       <NavbarBrand as="li" className="max-w-fit">
         <NextLink className="flex justify-start items-center" href="/">
           <p className="font-bold text-inherit">DORETTO</p>
