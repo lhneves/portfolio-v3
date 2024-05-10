@@ -6,6 +6,7 @@ import { Providers } from './providers';
 import { siteConfig } from '@/config/site';
 
 import { Navbar } from '@/components/Navbar';
+import { Footer } from '@/components/Footer';
 
 const museoModerno = MuseoModerno({ subsets: ['latin'] });
 
@@ -34,6 +35,7 @@ export default function RootLayout({
           <div className="relative flex flex-col">
             <Navbar />
             {children}
+            <Footer />
           </div>
         </Providers>
       </body>
