@@ -1,0 +1,5 @@
+export const NEXT_PUBLIC_EMAILJS_SERVICE_KEY = process.env
+  .NEXT_PUBLIC_EMAILJS_SERVICE_KEY as string;
+export const NEXT_PUBLIC_EMAILJS_TEMPLATE_KEY = process.env
+  .NEXT_PUBLIC_EMAILJS_TEMPLATE_KEY as string;
+export const NEXT_PUBLIC_EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
