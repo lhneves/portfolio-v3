@@ -5,7 +5,7 @@ import { FaRegArrowAltCircleUp } from 'react-icons/fa';
 
 import { animateScroll as scroll } from 'react-scroll';
 
-export const ScrollButton = () => {
+export const FooterScrollButton = () => {
   return (
     <Link href="/" className="flex items-center space-x-2" onClick={() => scroll.scrollToTop()}>
       <FaRegArrowAltCircleUp />

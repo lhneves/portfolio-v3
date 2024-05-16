@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export const Contact = () => {
   return (
-    <section className="w-full py-20 h-vh lg:h-[calc(90svh_-_6rem)]">
+    <section id="contact" className="w-full py-20 h-vh lg:h-[calc(90svh_-_6rem)]">
       <div className="w-full px-10 max-w-6xl mx-auto">
         <div
           className={cn(

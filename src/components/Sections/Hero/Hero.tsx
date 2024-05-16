@@ -1,10 +1,10 @@
-import { Button } from '@nextui-org/react';
+import { HeroScrollButton } from './HeroScrollButton';
 
 import { WavyBackground } from '@/components/WavyBackground';
 
 export const Hero = () => {
   return (
-    <section className="relative h-[calc(100svh_-_4rem)] w-full">
+    <section id="home" className="relative h-[calc(100svh_-_4rem)] w-full">
       <WavyBackground className="max-w-4xl mx-auto pb-60">
         <div>
           <p className="mb-10 text-xl md:text-3xl lg:text-5xl mt-4 font-medium  text-center">
@@ -17,9 +17,7 @@ export const Hero = () => {
             And I&apos;m here to unlock the best of frontend development
           </p>
           <div className="absolute-center-bottom">
-            <Button variant="ghost" color="secondary" className="border-violet-400">
-              Check it out
-            </Button>
+            <HeroScrollButton />
           </div>
         </div>
       </WavyBackground>
