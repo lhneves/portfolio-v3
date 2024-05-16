@@ -5,8 +5,9 @@ import {
   NavbarMenuToggle,
   NavbarBrand,
   NavbarItem,
-  NavbarMenuItem,
 } from '@nextui-org/navbar';
+
+import { NavbarLinks } from './NavbarLinks';
 
 import NextLink from 'next/link';
 import { Link } from '@nextui-org/link';
@@ -28,13 +29,7 @@ export const Navbar = () => {
 
       <NavbarContent className="hidden lg:flex basis-1/5 sm:basis-full gap-14" justify="end">
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item, index) => (
-            <NavbarItem key={item.href} isActive={index === 0}>
-              <Link color={index === 0 ? 'primary' : 'foreground'} href={item.href}>
-                {item.label}
-              </Link>
-            </NavbarItem>
-          ))}
+          <NavbarLinks />
         </ul>
         <NavbarItem className="flex gap-2">
           <Link isExternal href={siteConfig.links.gmail} aria-label="Twitter">
@@ -68,13 +63,7 @@ export const Navbar = () => {
 
       <NavbarMenu>
         <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`} isActive={index === 0}>
-              <Link color={index === 0 ? 'primary' : 'foreground'} href={item.href} size="lg">
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
-          ))}
+          <NavbarLinks />
         </div>
       </NavbarMenu>
     </NextUINavbar>

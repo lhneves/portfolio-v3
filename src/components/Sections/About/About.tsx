@@ -3,11 +3,12 @@ import DevCartoon from '@/assets/dev-cartoon.webp';
 
 import { cn } from '@/lib/cn';
 
-import { Button, Card, CardBody } from '@nextui-org/react';
+import { AboutScrollButton } from './AboutScrollButton';
+import { Card, CardBody } from '@nextui-org/react';
 
 export const About = () => {
   return (
-    <section className="w-full py-20">
+    <section id="about" className="w-full py-20">
       <div className="w-full px-10 max-w-6xl mx-auto">
         <Card className="bg-background/60 dark:bg-default-100/50 p-0" isBlurred shadow="sm">
           <CardBody className="p-6">
@@ -58,14 +59,7 @@ export const About = () => {
                 <p>I love to collaborate, connect and exchange experiences with others.</p>
                 <p className="text-blue-600 font-semibold">Feel free to contact me.</p>
                 <div className="flex justify-end">
-                  <Button
-                    size="sm"
-                    color="secondary"
-                    variant="shadow"
-                    className="violet-blue-gradient lg:h-10 lg:px-4 lg:text-small"
-                  >
-                    Contact Me
-                  </Button>
+                  <AboutScrollButton />
                 </div>
               </div>
             </div>
