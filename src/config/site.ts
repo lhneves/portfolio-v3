@@ -16,10 +16,10 @@ export const siteConfig = {
       label: 'Skills',
       href: 'skills',
     },
-    {
-      label: 'Projects',
-      href: 'projects',
-    },
+    // {
+    //   label: 'Projects',
+    //   href: 'projects',
+    // },
     {
       label: 'Contact',
       href: 'contact',
