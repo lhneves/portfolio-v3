@@ -2,8 +2,11 @@
 
 import { Link } from 'react-scroll';
 import { Button } from '@nextui-org/react';
+import { useTranslations } from 'next-intl';
 
 export const HeroScrollButton = () => {
+  const t = useTranslations('HeroPage');
+
   return (
     <Button
       as={Link}
@@ -14,7 +17,7 @@ export const HeroScrollButton = () => {
       color="secondary"
       className="border-violet-400"
     >
-      Check it out
+      {t('check_button')}
     </Button>
   );
 };

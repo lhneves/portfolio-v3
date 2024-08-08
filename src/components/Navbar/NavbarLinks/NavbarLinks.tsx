@@ -8,7 +8,11 @@ import { Link as ScrollLink } from 'react-scroll';
 import { siteConfig } from '@/config/site';
 import { NavbarItem } from '@nextui-org/react';
 
+import { useTranslations } from 'next-intl';
+
 export const NavbarLinks = () => {
+  const t = useTranslations('Navbar');
+
   const [activeLink, setActiveLink] = useState('');
 
   function handleSetActive(to: string) {
@@ -30,7 +34,7 @@ export const NavbarLinks = () => {
             smooth
             onSetActive={handleSetActive}
           >
-            {item.label}
+            {t(item.label)}
           </Link>
         </NavbarItem>
       ))}
