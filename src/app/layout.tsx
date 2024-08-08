@@ -3,6 +3,10 @@ import { MuseoModerno } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
 
+// i18n Provider
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
+
 import { siteConfig } from '@/config/site';
 
 import { Navbar } from '@/components/Navbar';
@@ -23,20 +27,28 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages();
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body className={museoModerno.className}>
         <Providers>
-          <div className="relative flex flex-col">
-            <Navbar />
-            {children}
-            <Footer />
-          </div>
+          <NextIntlClientProvider messages={messages}>
+            <div className="relative flex flex-col">
+              <Navbar />
+              {children}
+              <Footer />
+            </div>
+          </NextIntlClientProvider>
         </Providers>
       </body>
     </html>

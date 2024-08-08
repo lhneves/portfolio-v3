@@ -5,8 +5,11 @@ import { cn } from '@/lib/cn';
 
 import { AboutScrollButton } from './AboutScrollButton';
 import { Card, CardBody } from '@nextui-org/react';
+import { useTranslations } from 'next-intl';
 
 export const About = () => {
+  const t = useTranslations('AboutPage');
+
   return (
     <section id="about" className="w-full py-20">
       <div className="w-full px-10 max-w-6xl mx-auto">
@@ -34,30 +37,26 @@ export const About = () => {
 
               <div className="flex flex-col gap-5 font-light text-sm md:text-base lg:col-span-6">
                 <h3 className="font-semibold text-violet-blue-gradient w-fit text-2xl">
-                  Who am I?
+                  {t('who_am_i')}
                 </h3>
                 <p>
-                  I&apos;m a<span className="text-blue-600 font-semibold"> Frontend Developer</span>
-                  , with a 3+ years of experience, passionate about performance and design, creating
-                  delightful user experiences.
+                  {t('about_intro')}
+                  <span className="text-blue-600 font-semibold"> {t('about_frontend')}r</span>
+                  {t('about_experience')}
                 </p>
                 <p>
-                  Focusing on creating fast and modern applications, I&apos;ve been creating high
-                  quality interfaces, applying{' '}
-                  <span className="text-blue-600 font-semibold">
-                    animations, responsiveness and SEO
-                  </span>
-                  .
+                  {t('about_focus_intro')}
+                  <span className="text-blue-600 font-semibold">{t('about_focus_specified')}</span>.
                 </p>
                 <p>
-                  My main formula is:
+                  {t('about_formula')}
                   <br />
                   <span className="text-blue-600 font-semibold">
-                    Performance + UX/UI = Amazing Interfaces
+                    {t('about_formula_highligth')}
                   </span>
                 </p>
-                <p>I love to collaborate, connect and exchange experiences with others.</p>
-                <p className="text-blue-600 font-semibold">Feel free to contact me.</p>
+                <p>{t('about_i_love')} </p>
+                <p className="text-blue-600 font-semibold"> {t('about_contact_me')} </p>
                 <div className="flex justify-end">
                   <AboutScrollButton />
                 </div>

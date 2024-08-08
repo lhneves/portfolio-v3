@@ -17,6 +17,7 @@ import {
   NEXT_PUBLIC_EMAILJS_SERVICE_KEY,
   NEXT_PUBLIC_EMAILJS_TEMPLATE_KEY,
 } from '@/config/vars';
+import { useTranslations } from 'next-intl';
 
 interface ContactFormData {
   name: string;
@@ -25,6 +26,8 @@ interface ContactFormData {
 }
 
 export const ContactForm = () => {
+  const t = useTranslations('ContactPage');
+
   const [isLoading, setIsLoading] = useState(false);
   const [messageAlreadySent, setMessageAlreadySent] = useState(false);
 
@@ -96,9 +99,9 @@ export const ContactForm = () => {
         render={({ field, fieldState }) => (
           <Input
             type="text"
-            label="Name"
+            label={t('form_name_input')}
             aria-label="name"
-            placeholder="Whats your name?"
+            placeholder={t('form_name_input_placeholder')}
             value={field.value}
             onChange={field.onChange}
             isDisabled={messageAlreadySent}
@@ -112,10 +115,10 @@ export const ContactForm = () => {
         name="email"
         defaultValue=""
         rules={{
-          required: 'Email is required',
+          required: t('form_required_email'),
           pattern: {
             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-            message: 'Invalid email',
+            message: t('form_invalid_email'),
           },
         }}
         render={({ field, fieldState }) => (
@@ -123,7 +126,7 @@ export const ContactForm = () => {
             type="text"
             label="Email"
             aria-label="email"
-            placeholder="Whats your email?"
+            placeholder={t('form_email_input_placeholder')}
             value={field.value}
             onChange={field.onChange}
             isDisabled={messageAlreadySent}
@@ -139,9 +142,9 @@ export const ContactForm = () => {
         render={({ field, fieldState }) => (
           <Textarea
             type="text"
-            label="Message"
+            label={t('form_message_input')}
             aria-label="message"
-            placeholder="What's your message?"
+            placeholder={t('form_message_input_placeholder')}
             value={field.value}
             onChange={field.onChange}
             isDisabled={messageAlreadySent}
@@ -159,7 +162,7 @@ export const ContactForm = () => {
         className="violet-blue-gradient lg:h-10 lg:px-4 lg:text-small"
         isLoading={isLoading}
       >
-        Contact Me
+        {t('form_contact_button')}
       </Button>
     </form>
   );

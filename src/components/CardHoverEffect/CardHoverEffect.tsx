@@ -7,6 +7,7 @@ import { Card, CardBody, CardHeader } from '@nextui-org/react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { cn } from '@/lib/cn';
+import { useTranslations } from 'next-intl';
 
 export const CardHoverEffect = ({
   items,
@@ -20,6 +21,8 @@ export const CardHoverEffect = ({
   }[];
   className?: string;
 }) => {
+  const t = useTranslations('SkillsPage');
+
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
@@ -69,7 +72,7 @@ export const CardHoverEffect = ({
                   className,
                 )}
               >
-                {item.description}
+                {t(item.description)}
               </p>
             </CardBody>
           </Card>

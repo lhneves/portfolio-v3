@@ -5,15 +5,15 @@ export const siteConfig = {
   description: 'Luiz Doretto Frontend Developer Portfolio.',
   navItems: [
     {
-      label: 'Home',
+      label: 'home',
       href: 'home',
     },
     {
-      label: 'About',
+      label: 'about',
       href: 'about',
     },
     {
-      label: 'Skills',
+      label: 'skills',
       href: 'skills',
     },
     // {
@@ -21,7 +21,7 @@ export const siteConfig = {
     //   href: 'projects',
     // },
     {
-      label: 'Contact',
+      label: 'contact',
       href: 'contact',
     },
   ],

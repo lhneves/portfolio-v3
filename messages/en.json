@@ -1,0 +1,61 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "HeroPage": {
+    "welcome": "Hi, there! 👋🏼",
+    "who_am_i": "My name is Luiz Doretto",
+    "why_i_am_here": "And I'm here to unlock the best of frontend development",
+    "check_button": "Check it out"
+  },
+  "AboutPage": {
+    "who_am_i": "Who am I?",
+    "about_intro": "I'm a ",
+    "about_frontend": "Frontend Developer",
+    "about_experience": ", with a 3+ years of experience, passionate about performance and design, creating delightful user experiences.",
+    "about_focus_intro": "Focusing on creating fast and modern applications, I've been creating high quality interfaces, applying ",
+    "about_focus_specified": "animations, responsiveness and SEO",
+    "about_formula": "My main formula is:",
+    "about_formula_highligth": "Performance + UX/UI = Amazing Interfaces",
+    "about_i_love": "I love to collaborate, connect and exchange experiences with others.",
+    "about_contact_me": "Feel free to contact me.",
+    "about_button": "Contact Me"
+  },
+  "SkillsPage": {
+    "title": "Skills",
+    "subtitle": "Some of my skills used in recent projects.",
+    "html": "HTML is the standard markup language for creating web pages and applications",
+    "css": "CSS is the language used for styling the appearance of web pages",
+    "javascript": "JavaScript is a versatile programming language used for both front-end and back-end web development",
+    "typescript": "Typescript is a statically-typed superset of JavaScript that enhances code quality and maintainability",
+    "react": "React is a powerful JavaScrip library for building interactive user interfaces",
+    "next": "Next is a framework that extends React for creating server-rendered applications",
+    "styled_components": "Styled-Components is a CSS-in-JS library that allows you to write CSS styles directly in your JavaScript",
+    "jest": "Jest is a testing framework that provides a simple and efficient way to test code"
+  },
+  "ContactPage": {
+    "title": "Send me a message!",
+    "subtitle": "I'm always open to new connections and conversations. I'll answer your your message as soon as possible, be it for:",
+    "first_bullet_point": "Promote your business",
+    "second_bullet_point": "Exchange knowledge",
+    "third_bullet_point": "Freelanceo",
+    "form_title": "Get in touch!",
+    "form_name_input": "Name",
+    "form_name_input_placeholder": "What's your name?",
+    "form_email_input_placeholder": "What's your emal?",
+    "form_invalid_email": "Invalid email",
+    "form_required_email": "Email is required",
+    "form_message_input": "Message",
+    "form_message_input_placeholder": "What's your message?",
+    "form_contact_button": "Contact Me",
+    "form_whatsapp_button": "Chat on WhatsApp",
+    "form_or": "or"
+  },
+  "Footer": {
+    "back": "Back to top",
+    "connect": "Let's connect"
+  }
+}

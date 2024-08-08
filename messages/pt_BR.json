@@ -1,0 +1,61 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "contact": "Contato"
+  },
+  "HeroPage": {
+    "welcome": "Eae, tudo bem? 👋🏼",
+    "who_am_i": "Meu nome é Luiz Doretto",
+    "why_i_am_here": "Quero te mostrar o melhor do desenvolvimento Frontend",
+    "check_button": "Veja mais!"
+  },
+  "AboutPage": {
+    "who_am_i": "Quem eu sou?",
+    "about_intro": "Sou um ",
+    "about_frontend": "Desenvolvedor Frontend ",
+    "about_experience": "com mais de 3 anos de experiência, apaixonado por performance e design, criando incríveis experiências do usuário.",
+    "about_focus_intro": "Focado em criar aplicações rápidas e modernas, venho criando interfaces de alta qualidade, aplicando ",
+    "about_focus_specified": "animações, responsividade e SEO",
+    "about_formula": "Minha principal fórmula: ",
+    "about_formula_highligth": "Performance + UX/UI = Interfaces Incríveis",
+    "about_i_love": "É uma paixão me conectar com outras pessoas, colaborar e trocar experiências.",
+    "about_contact_me": "Sinta-se à vontade para me chamar.",
+    "about_button": "Entre em contato!"
+  },
+  "SkillsPage": {
+    "title": "Habilidades",
+    "subtitle": "Algumas das minhas habilidades usadas em projetos recentes.",
+    "html": "HTML é a linguagem de marcação padrão para criação de páginas da web e aplicativos",
+    "css": "CSS é a linguagem usada para definir o estilo da aparência das páginas da web",
+    "javascript": "JavaScript é uma linguagem de programação versátil usada para desenvolvimento web front-end e back-end",
+    "typescript": "Typescript é um superset de JavaScript tipado estaticamente, que melhora a qualidade e a capacidade de manutenção do código",
+    "react": "React é uma biblioteca JavaScrip poderosa para construir interfaces de usuário interativas",
+    "next": "Next é um framework que estende o React para criar aplicativos renderizados em servidor",
+    "styled_components": "Styled-Components é uma biblioteca CSS-in-JS que permite escrever estilos CSS diretamente em seu JavaScript",
+    "jest": "Jest é um framwork de teste que fornece uma maneira simples e eficiente de testar código"
+  },
+  "ContactPage": {
+    "title": "Me mande uma mensagem! ",
+    "subtitle": "Estou sempre aberto a novas conexões e conversas. Irei responder sua mensagem o mais rápido possível, seja para:",
+    "first_bullet_point": "Promover seu negócio",
+    "second_bullet_point": "Trocar conhecimento",
+    "third_bullet_point": "Freelance",
+    "form_title": "Entre em contato!",
+    "form_name_input": "Nome",
+    "form_name_input_placeholder": "Qual seu nome?",
+    "form_email_input_placeholder": "Qual seu emal?",
+    "form_invalid_email": "Email inválido",
+    "form_required_email": "Email é obrigatório",
+    "form_message_input": "Mensagem",
+    "form_message_input_placeholder": "Qual sua mensagem?",
+    "form_contact_button": "Entre em contato!",
+    "form_whatsapp_button": "Chame pelo WhatsApp",
+    "form_or": "ou"
+  },
+  "Footer": {
+    "back": "Volte ao início",
+    "connect": "Vamos nos conectar"
+  }
+}

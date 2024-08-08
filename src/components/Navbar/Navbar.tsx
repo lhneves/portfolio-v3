@@ -17,6 +17,7 @@ import { ThemeSwitch } from '@/components/ThemeSwitch';
 import { SiGmail } from 'react-icons/si';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { siteConfig } from '@/config/site';
+import { LangSwitch } from '../LangSwitch';
 
 export const Navbar = () => {
   return (
@@ -41,11 +42,14 @@ export const Navbar = () => {
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
             <FaGithub className="text-default-500" size={22} />
           </Link>
-          <ThemeSwitch />
         </NavbarItem>
+        <div className="flex items-center gap-4 ">
+          <LangSwitch />
+          <ThemeSwitch />
+        </div>
       </NavbarContent>
 
-      <NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
+      <NavbarContent className="lg:hidden basis-1 pl-4 gap-8" justify="end">
         <NavbarItem className="flex gap-2">
           <Link isExternal href={siteConfig.links.gmail} aria-label="Twitter">
             <SiGmail className="text-default-500" size={22} />
@@ -56,8 +60,11 @@ export const Navbar = () => {
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
             <FaGithub className="text-default-500" size={22} />
           </Link>
-          <ThemeSwitch />
         </NavbarItem>
+        <div className="flex items-center gap-4 ">
+          <LangSwitch />
+          <ThemeSwitch />
+        </div>
         <NavbarMenuToggle />
       </NavbarContent>
 
